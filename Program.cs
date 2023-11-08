@@ -4,10 +4,10 @@ using System.Runtime.Serialization;
 using System.Text.Json.Nodes;
 using System.Xml;
 
-Console.WriteLine("Enter X value :");
+Console.Write("Enter X value :");
 var X = int.Parse(Console.ReadLine());
 
-Console.WriteLine("Enter Array :");
+Console.Write("Enter Array :");
 var arr = Console.ReadLine();
 var split = arr.Split(',');
 
@@ -28,10 +28,9 @@ for (var i = 0; i < l; i++)
 {
     for (var j = i +1; j < l; j++)
     {
-        Console.WriteLine($"i: {i}, j: {j},  ");
-
         if (X.Equals(ints[i] + ints[j]))
         {
+            Console.WriteLine($"i: {ints[i]}, j: {ints[j]}");
             outVal++;
         }
     }    
